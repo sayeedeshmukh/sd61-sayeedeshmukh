@@ -1,4 +1,12 @@
 <header class="bg-rose-600 p-4 dark:bg-rose-700">
+<button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+<script>
+    document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+    });
+</script>
+
     <nav class="container mx-auto">
         <ul class="flex space-x-4">
             <li><a href="/" class="text-rose-50">Home</a></li>
