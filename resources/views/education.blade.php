@@ -79,7 +79,7 @@
                             <div class="relative w-fit">
                                 <img
                                     class="h-20 w-20 rounded-2xl object-cover object-center sm:h-24 sm:w-24"
-                                    src="public/images/author.jpg"
+                                    src="images/author.jpg"
                                     alt=""
                                 />
                                 <span

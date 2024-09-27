@@ -1,5 +1,5 @@
 <header
-    class="relative border-b border-rose-300/60 dark:border-rose-900/60  bg-white dark:bg-rose-900 dark:border-rose-900"
+    class="relative border-b border-rose-300/60 dark:border-rose-900/60  bg-rose-50 dark:bg-rose-900 dark:border-rose-900"
     x-data="{ mobileMenuOpen: false }"
 >
     <nav
