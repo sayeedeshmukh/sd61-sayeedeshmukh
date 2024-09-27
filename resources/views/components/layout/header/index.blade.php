@@ -1,5 +1,5 @@
 <header
-    class="relative border-b border-gray-300/60 dark:border-gray-700/60  bg-white dark:bg-gray-800 dark:border-gray-700"
+    class="relative border-b border-rose-300/60 dark:border-rose-700/60  bg-white dark:bg-rose-800 dark:border-rose-700"
     x-data="{ mobileMenuOpen: false }"
   >
     <nav
@@ -13,7 +13,7 @@
             <x-icons.logo />
           </a>
           <a href="{{ url('/') }}" class="hidden lg:block">
-            <span class="text-4xl text-gray-700 dark:text-gray-100 hidden lg:block ml-2">{{ __(config('info.sitename'))}}</span>
+            <span class="text-4xl text-rose-700 dark:text-rose-100 hidden lg:block ml-2">{{ __(config('info.sitename'))}}</span>
           </a>
         </div>
 
@@ -24,7 +24,7 @@
             @foreach (config('info.navlinks') as $navLink)
                 <a
                     href="{{ url($navLink['url']) }}"
-                    class="px-3 py-1 text-md font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
+                    class="px-3 py-1 text-md font-medium text-rose-800 dark:text-rose-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
                 >
                     {{ __($navLink['name']) }}
                 </a>
@@ -35,7 +35,7 @@
             <!-- Pages dropdown button -->
             <button
               type="button"
-              class="group flex items-center px-3 py-1 text-md font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
+              class="group flex items-center px-3 py-1 text-md font-medium text-rose-800 dark:text-rose-100 transition duration-300 ease-in-out hover:text-red-700 dark:hover:text-red-200"
               @click="open = true"
             >
               <span :class="{'text-red-700 dark:text-red-200': open}">{{ __('Pages') }}</span>
@@ -46,14 +46,14 @@
             <!-- Pages dropdown -->
             <div
               style="display: none"
-              class="absolute right-0 z-20 mt-3 w-52 space-y-1 rounded-xl bg-white dark:bg-gray-700 p-2.5 outline-none drop-shadow filter focus:outline-none"
+              class="absolute right-0 z-20 mt-3 w-52 space-y-1 rounded-xl bg-white dark:bg-rose-700 p-2.5 outline-none drop-shadow filter focus:outline-none"
               x-show.transition="open"
               @click.away="open = false"
             >
                 @foreach (config('info.pagelinks') as $pageLink)
                     <a
                         href="{{ url($pageLink['url']) }}"
-                        class="block rounded-lg px-5 py-3.5 font-medium text-gray-800 dark:text-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 hover:text-red-700 dark:hover:text-red-200"
+                        class="block rounded-lg px-5 py-3.5 font-medium text-rose-800 dark:text-rose-100 transition duration-300 ease-in-out hover:bg-rose-50 dark:bg-rose-700 dark:hover:bg-rose-600 hover:text-red-700 dark:hover:text-red-200"
                     >
                         {{ __($pageLink['name']) }}
                     </a>
@@ -73,7 +73,7 @@
 
         <!-- Hamburger menu button -->
         <button
-          class="group relative ml-2 flex cursor-pointer items-center justify-center rounded-xl bg-gray-50 dark:bg-gray-700 p-3 transition duration-300 ease-in-out hover:bg-gray-100 focus:outline-none md:hidden"
+          class="group relative ml-2 flex cursor-pointer items-center justify-center rounded-xl bg-rose-50 dark:bg-rose-700 p-3 transition duration-300 ease-in-out hover:bg-rose-100 focus:outline-none md:hidden"
           aria-label="Toggle Navigation"
           @click="mobileMenuOpen = !mobileMenuOpen"
         >
@@ -81,19 +81,19 @@
             class="relative h-3.5 w-4 transform transition duration-500 ease-in-out"
           >
             <span
-              class="absolute block h-0.5 rotate-0 transform rounded-full bg-gray-600 dark:bg-gray-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-gray-900 dark:group-hover:bg-gray-100"
+              class="absolute block h-0.5 rotate-0 transform rounded-full bg-rose-600 dark:bg-rose-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-rose-900 dark:group-hover:bg-rose-100"
               :class="mobileMenuOpen ? 'w-0 top-1.5 left-1/2': 'top-0 left-0 w-full'"
             ></span>
             <span
-              class="absolute left-0 top-1.5 block h-0.5 w-full transform rounded-full bg-gray-600 dark:bg-gray-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-gray-900 dark:group-hover:bg-gray-100"
+              class="absolute left-0 top-1.5 block h-0.5 w-full transform rounded-full bg-rose-600 dark:bg-rose-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-rose-900 dark:group-hover:bg-rose-100"
               :class="mobileMenuOpen ? 'rotate-45': 'rotate-0'"
             ></span>
             <span
-              class="absolute left-0 top-1.5 block h-0.5 w-full transform rounded-full bg-gray-600 dark:bg-gray-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-gray-900 dark:group-hover:bg-gray-100"
+              class="absolute left-0 top-1.5 block h-0.5 w-full transform rounded-full bg-rose-600 dark:bg-rose-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-rose-900 dark:group-hover:bg-rose-100"
               :class="mobileMenuOpen ? '-rotate-45': 'rotate-0'"
             ></span>
             <span
-              class="absolute block h-0.5 rotate-0 transform rounded-full bg-gray-600 dark:bg-gray-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-gray-900 dark:group-hover:bg-gray-100"
+              class="absolute block h-0.5 rotate-0 transform rounded-full bg-rose-600 dark:bg-rose-400 opacity-100 transition-all duration-300 ease-in-out group-hover:bg-rose-900 dark:group-hover:bg-rose-100"
               :class="mobileMenuOpen ? 'top-1.5 left-1/2 w-0': 'left-0 top-3 w-full'"
             ></span>
           </span>
@@ -114,14 +114,14 @@
         @foreach (config('info.navlinks') as $navLink)
             <a
                 href="{{ url($navLink['url']) }}"
-                class="block rounded-lg bg-gray-50 dark:bg-gray-700 px-4 py-3 font-medium text-red-700 dark:text-red-300"
+                class="block rounded-lg bg-rose-50 dark:bg-rose-700 px-4 py-3 font-medium text-red-700 dark:text-red-300"
                 aria-current="page"
             >{{ __($navLink['name']) }}</a>
         @endforeach
       </div>
-      <div class="border-t border-gray-300/70 dark:border-gray-100/70 pb-3 pt-4">
+      <div class="border-t border-rose-300/70 dark:border-rose-100/70 pb-3 pt-4">
         <div
-          class="mt-2 px-6 text-xs font-medium uppercase tracking-widest text-gray-500"
+          class="mt-2 px-6 text-xs font-medium uppercase tracking-widest text-rose-500"
         >
           {{ __('Pages') }}
         </div>
@@ -129,7 +129,7 @@
             @foreach (config('info.pagelinks') as $pageLink)
             <a
                 href="{{ url($pageLink['url']) }}"
-                class="block rounded-lg px-4 py-2 font-medium text-gray-600 dark:text-gray-200  transition duration-300 ease-in-out hover:bg-gray-50 dark:bg-gray-700 hover:text-red-700"
+                class="block rounded-lg px-4 py-2 font-medium text-rose-600 dark:text-rose-200  transition duration-300 ease-in-out hover:bg-rose-50 dark:bg-rose-700 hover:text-red-700"
             >
                 {{ __($pageLink['name']) }}
             </a>

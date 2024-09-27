@@ -1,7 +1,7 @@
 <!-- heroicon name: solid/arrow-narrow-right -->
 <svg
 xmlns="http://www.w3.org/2000/svg"
-class="mx-2 h-5 w-5 text-rose-400 dark:text-rose-200 transition duration-300 ease-in-out group-hover:translate-x-1.5 group-hover:text-gray-400 dark:group-hover:text-gray-200"
+class="mx-2 h-5 w-5 text-rose-400 dark:text-rose-200 transition duration-300 ease-in-out group-hover:translate-x-1.5 group-hover:text-rose-600 dark:group-hover:text-rose-200"
 viewBox="0 0 20 20"
 fill="currentColor"
 >

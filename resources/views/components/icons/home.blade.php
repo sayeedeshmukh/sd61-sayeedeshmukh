@@ -1,7 +1,7 @@
 <!-- Heroicon name: solid/home -->
 <svg
 xmlns="http://www.w3.org/2000/svg"
-class="mr-2 h-[1.125rem] w-[1.125rem] flex-shrink-0 text-rose-200 transition duration-300 ease-in-out group-hover:text-gray-500"
+class="mr-2 h-[1.125rem] w-[1.125rem] flex-shrink-0 text-rose-200 transition duration-300 ease-in-out group-hover:text-rose-500"
 viewBox="0 0 20 20"
 fill="currentColor"
 >

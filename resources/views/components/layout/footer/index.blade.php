@@ -42,7 +42,7 @@
             @foreach (config('info.footerlinks') as $link)
             <a
                 href="{{ url($link['url']) }}"
-                class="px-5 py-2 text-base text-rose-300 transition duration-300 ease-in-out hover:text-gray-700"
+                class="px-5 py-2 text-base text-rose-300 transition duration-300 ease-in-out hover:text-rose-700"
             >
                 {{ __($link['name']) }}
             </a>

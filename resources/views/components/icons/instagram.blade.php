@@ -1,6 +1,6 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="h-3.5 w-3.5 transform text-rose-700 transition duration-300 ease-in-out group-hover:scale-110 group-hover:text-gray-700 dark:text-rose-100 dark:group-hover:text-gray-200"
+    class="h-3.5 w-3.5 transform text-rose-700 transition duration-300 ease-in-out group-hover:scale-110 group-hover:text-rose-700 dark:text-rose-100 dark:group-hover:text-rose-200"
     viewBox="0 0 512 512"
     fill="currentColor"
 >
