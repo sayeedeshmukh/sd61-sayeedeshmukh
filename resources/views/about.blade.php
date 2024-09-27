@@ -11,8 +11,7 @@
                     class="object-cover object-center border-4 border-rose-300 mr-6" 
                 />
             </div>
-
-            <!-- Post Header Content -->
+                        <!-- Post Header Content -->
             <div class="px-5 lg:px-2 sm:w-3/4">
                 <!-- Article Information -->
                 <div
@@ -22,16 +21,13 @@
                         href="{{ url('/About') }}"
                         class="transition-color relative text-sm font-medium uppercase tracking-widest text-rose-900 dark:text-rose-200 duration-300 ease-in-out hover:text-fuchsia-950 dark:hover:text-fuchsia-200"
                     >{{ __('about') }}</a>
-
-                    <h2 class="mt-3 text-4xl font-medium tracking-normal text-rose-900 dark:text-rose-300 decoration-rose-300 decoration-3 transition duration-300 ease-in-out group-hover:underline sm:mt-5 sm:text-5xl sm:leading-tight md:tracking-tight lg:text-6xl"><strong>Sayee Deshmukh</h2>
-
+                    <h2 class="mt-3 text-4xl font-medium tracking-normal text-rose-900 dark:text-rose-300 decoration-rose-300 decoration-3 transition duration-300 ease-in-out group-hover:underline sm:mt-5 sm:text-5xl sm:leading-tight md:tracking-tight lg:text-6xl">Sayee Deshmukh</h2>
                     <div>
-                        <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">As a dedicated student pursuing a Bachelor of Technology in <strong>Artificial Intelligence and Machine Learning</strong>, I am deeply passionate about the intersection of technology and innovation. My journey in academia is driven by an innate curiosity and a commitment to understanding complex concepts that shape our digital landscape. I thrive on practical applications of theory, which is why I am actively engaged in developing a static portfolio website using the Laravel framework. This project not only allows me to refine my technical skills but also serves as a canvas for showcasing my work.</p>
+                        <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">As a dedicated student pursuing a Bachelor of Technology in Artificial Intelligence and Machine Learning, I am deeply passionate about the intersection of technology and innovation. My journey in academia is driven by an innate curiosity and a commitment to understanding complex concepts that shape our digital landscape. I thrive on practical applications of theory, which is why I am actively engaged in developing a static portfolio website using the Laravel framework. This project not only allows me to refine my technical skills but also serves as a canvas for showcasing my work.</p>
                         <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">I utilize Blade templates and TailwindCSS, ensuring a modern and responsive design. Additionally, I'm incorporating language files to support multiple languages and implementing dark mode functionality for enhanced user experience. My meticulous approach is evident in my commitment to version control, as I diligently document every step of my projects on Git.</p>
                         <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">Beyond the confines of my studies, I have a passion for travel and exploration. Each journey offers me a chance to experience new cultures and perspectives, further enriching my understanding of the world. This love for discovery fuels my creativity and inspires me to bring fresh ideas into my projects.</p>
-                        <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">In summary, I am a <strong>tech-savvy individual</strong> who embraces challenges and continually seeks growth. With a foundation in AIML and a hands-on approach to learning, I am excited about the endless possibilities that technology holds for the future. I look forward to leveraging my skills and experiences to make a meaningful impact in the field of artificial intelligence and beyond.</p>
+                        <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">In summary, I am a tech-savvy individual who embraces challenges and continually seeks growth. With a foundation in AIML and a hands-on approach to learning, I am excited about the endless possibilities that technology holds for the future. I look forward to leveraging my skills and experiences to make a meaningful impact in the field of artificial intelligence and beyond.</p>
                     </div>
-
                     <!-- Author meta -->
                     <div class="mt-6 flex items-center sm:mt-8">
                         <a href="{{ url('/about') }}" class="mr-3 flex-shrink-0">
@@ -47,11 +43,9 @@
                                 ></span>
                             </div>
                         </a>
-
                         <div class="flex items-center text-sm lg:text-[15px]">
                             <span class="hidden text-rose-800 dark:text-rose-200 sm:inline-block">By&nbsp;</span>
                             <a class="font-medium text-rose-900 dark:text-rose-200 hover:underline" href="{{ url('/about') }}">{{ __(config('info.sitename')) }}</a>
-
                             <x-icons.calendar />
                             <span class="ml-1 text-rose-800 dark:text-rose-200">Sept 28, 2024</span>
                         </div>

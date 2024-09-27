@@ -1,37 +1,28 @@
 <x-layout>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
-</head>
-<body class="font-sans">
     <x-slot:title>Home</x-slot>
     <!-- Home Hero-->
     <section class="bg-rose-50 dark:bg-rose-900 pt-12 sm:pt-16 lg:pt-20">
-        <div
-          class="mx-auto max-w-2xl px-4 sm:px-6 lg:flex lg:max-w-screen-2xl lg:items-start lg:px-8"
-        >
+        <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:flex lg:max-w-screen-2xl lg:items-start lg:px-8">
             @php
-                $article = config('info.articles')[0];
+            $article = config('info.articles')[0];
             @endphp
           <!-- Featured Article-->
           <article class="relative lg:sticky lg:top-8 lg:w-1/2">
             <!-- Image -->
             <a
               href="{{ url('/blog') }}"
-              class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-rose-100 dark:bg-rose-800"
-            >
+              class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-rose-100 dark:bg-rose-800">
               <img
                 class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
                 data-src="{{ $article['image'] }}"
               />
             </a>
-
             <!-- Content -->
             <div class="mt-6 mb-6 md:align-middle">
               <a
                 href="{{ url('/projects/'. Str::of($article['category'])->lower()) }}"
                 class="transition-color relative text-sm font-medium uppercase tracking-widest text-rose-900 dark:text-rose-200 duration-300 ease-in-out hover:text-gray-600 dark:hover:text-gray-200"
-                >{{ __($article['category']) }}</a
-              >
+                >{{ __($article['category']) }}</a>
               <a href="{{ url('/blog') }}" class="group mt-3 block">
                 <h2
                   class="text-3xl font-medium tracking-normal text-rose-900 dark:text-rose-200 decoration-rose-900 dark:decoration-rose-300 decoration-3 transition duration-300 ease-in-out group-hover:underline md:tracking-tight lg:text-4xl lg:leading-tight"
@@ -91,5 +82,4 @@
           </div>
         </div>
       </section>
-      </body>
 </x-layout>
