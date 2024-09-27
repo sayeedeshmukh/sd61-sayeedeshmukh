@@ -11,7 +11,7 @@
             <!-- Image -->
             <a
               href="{{ url('/blog') }}"
-              class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-rose-100 dark:bg-rose-800">
+              class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-rose-100 dark:bg-rose-900">
               <img
                 class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
                 data-src="{{ $article['image'] }}"
@@ -22,7 +22,7 @@
               <a
                 href="{{ url('/projects/'. Str::of($article['category'])->lower()) }}"
                 class="transition-color relative text-sm font-medium uppercase tracking-widest text-rose-900 dark:text-rose-200 duration-300 ease-in-out hover:text-gray-600 dark:hover:text-gray-200"
-                >{{ __($article['category']) }}</a>
+                >{{ __($article['category']) }}</a >
               <a href="{{ url('/blog') }}" class="group mt-3 block">
                 <h2
                   class="text-3xl font-medium tracking-normal text-rose-900 dark:text-rose-200 decoration-rose-900 dark:decoration-rose-300 decoration-3 transition duration-300 ease-in-out group-hover:underline md:tracking-tight lg:text-4xl lg:leading-tight"
@@ -30,7 +30,7 @@
                   {{ $article['title']}}
                 </h2>
                 <div>
-                  <p class="mt-4 text-base leading-loose text-rose-800 dark:text-rose-200">
+                  <p class="mt-4 text-base leading-loose text-rose-900 dark:text-rose-200">
                     {{ $article['description'] }}
                   </p>
                 </div>

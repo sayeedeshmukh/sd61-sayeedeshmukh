@@ -9,7 +9,7 @@
                 <x-icons.logo />
             </a>
             <a href="{{ url('/') }}" class="block">
-                <div class="w-min sm:w-full text-4xl text-rose-800 dark:text-rose-100 sm:ml-2 flex items-center justify-center">{{ __(config('info.sitename'))}}</div>
+                <div class="w-min sm:w-full text-4xl text-rose-900 dark:text-rose-100 sm:ml-2 flex items-center justify-center">{{ __(config('info.sitename'))}}</div>
             </a>
         </div>
 

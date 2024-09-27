@@ -8,7 +8,7 @@
                 <x-icons.logo />
             </a>
             <a href="{{ url('/') }}" class="block">
-                <div class="w-min sm:w-full text-4xl text-rose-800 dark:text-rose-100 sm:ml-2 flex items-center justify-center">{{ __(config('info.sitename'))}}</div>
+                <div class="w-min sm:w-full text-4xl text-rose-900 dark:text-rose-100 sm:ml-2 flex items-center justify-center">{{ __(config('info.sitename'))}}</div>
             </a>
         </div>
 
@@ -31,7 +31,7 @@
 
       <!-- Footer Links Container -->
       <div
-        class="mt-10 border-t border-t-rose-300/70 pt-10 md:flex md:items-center md:justify-between"
+        class="mt-10 border-t border-t-rose-500/70 pt-10 md:flex md:items-center md:justify-between"
       >
         <!-- Footer Links -->
         <nav
@@ -41,7 +41,7 @@
             @foreach (config('info.footerlinks') as $link)
             <a
                 href="{{ url($link['url']) }}"
-                class="px-5 py-2 text-base text-rose-300 transition duration-300 ease-in-out hover:text-gray-700"
+                class="px-5 py-2 text-base text-rose-900 dark:text-rose-300 transition duration-300 ease-in-out hover:text-gray-700"
             >
                 {{ __($link['name']) }}
             </a>

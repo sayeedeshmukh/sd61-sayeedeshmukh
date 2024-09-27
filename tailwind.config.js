@@ -7,11 +7,7 @@ export default {
     './public/**/*.html',          // Scans static HTML files if you have any
   ],
   theme: {
-    extend: {fontFamily: {
-      sans: ['"Spicy Rice"', 'serif'],
-      
-    },
-  },
+    extend: { },
   },
   plugins: [],
 }
