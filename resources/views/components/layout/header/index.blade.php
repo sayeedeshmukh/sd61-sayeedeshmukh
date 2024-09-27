@@ -30,36 +30,7 @@
                 </a>
             @endforeach
 
-          <!-- Template pages dropdown container -->
-          <div class="relative" x-data="{ open: false }">
-            <!-- Pages dropdown button -->
-            <button
-              type="button"
-              class="group flex items-center px-3 py-1 text-md font-medium text-rose-950 dark:text-rose-100 transition duration-300 ease-in-out hover:text-red-800 dark:hover:text-red-200"
-              @click="open = true"
-            >
-              <span :class="{'text-red-800 dark:text-red-200': open}">{{ __('Pages') }}</span>
-
-              <x-icons.chevron-down />
-            </button>
-
-            <!-- Pages dropdown -->
-            <div
-              style="display: none"
-              class="absolute right-0 z-20 mt-3 w-52 space-y-1 rounded-xl bg-white dark:bg-rose-800 p-2.5 outline-none drop-shadow filter focus:outline-none"
-              x-show.transition="open"
-              @click.away="open = false"
-            >
-                @foreach (config('info.pagelinks') as $pageLink)
-                    <a
-                        href="{{ url($pageLink['url']) }}"
-                        class="block rounded-lg px-5 py-3.5 font-medium text-rose-950 dark:text-rose-100 transition duration-300 ease-in-out hover:bg-rose-50 dark:bg-rose-800 dark:hover:bg-rose-600 hover:text-red-800 dark:hover:text-red-200"
-                    >
-                        {{ __($pageLink['name']) }}
-                    </a>
-                @endforeach
-            </div>
-          </div>
+          
 
           <x-theme-toggle />
           
@@ -119,22 +90,6 @@
             >{{ __($navLink['name']) }}</a>
         @endforeach
       </div>
-      <div class="border-t border-rose-300/70 dark:border-rose-100/70 pb-3 pt-4">
-        <div
-          class="mt-2 px-6 text-xs font-medium uppercase tracking-widest text-rose-500"
-        >
-          {{ __('Pages') }}
-        </div>
-        <div class="mt-3 space-y-1 px-2">
-            @foreach (config('info.pagelinks') as $pageLink)
-            <a
-                href="{{ url($pageLink['url']) }}"
-                class="block rounded-lg px-4 py-2 font-medium text-rose-600 dark:text-rose-200  transition duration-300 ease-in-out hover:bg-rose-50 dark:bg-rose-800 hover:text-red-800"
-            >
-                {{ __($pageLink['name']) }}
-            </a>
-            @endforeach
-        </div>
       </div>
     </nav>
   </header>

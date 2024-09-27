@@ -7,6 +7,6 @@ Route::get('/', function () {
 });
 Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
-Route::view('/projects', 'projects')->name('projects');
-Route::view('/contact', 'contact')->name('contact');
+Route::view('/education', 'education')->name('education');
+Route::view('/skilss', 'skills')->name('skills');
 

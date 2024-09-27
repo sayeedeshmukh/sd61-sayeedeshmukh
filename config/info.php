@@ -5,48 +5,26 @@ return [
         [
             'id' => 'college',
             'name' => 'About Me',
-            'url' => 'about',
+            'url' => '/about',
             'image' => 'images/aboutme.jpg',
         ],
         [
             'id' => 'technology',
             'name' => 'Education',
-            'url' => 'education',
+            'url' => '/education',
             'image' => 'images/edu.jpg',
         ],
         [
             'id' => 'events',
             'name' => 'Skills',
-            'url' => 'skills',
+            'url' => '/skills',
             'image' => 'images/skills.jpg',
         ],
         [
             'id' => 'events',
             'name' => 'Favorites',
-            'url' => 'fav',
+            'url' => '/fav',
             'image' => 'images/fav.jpg',
-        ],
-    ],
-    'pagelinks' => [
-        [
-            'name' => 'Home',
-            'url' => '/',
-        ],
-        [
-            'name' => 'About Me',
-            'url' => '/about',
-        ],
-        [
-            'name' => 'Portfolio',
-            'url' => '/projects',
-        ],
-        [
-            'name' => 'Blog',
-            'url' => '/blog',
-        ],
-        [
-            'name' => 'Favorites',
-            'url' => '/Favorites',
         ],
     ],
     'footerlinks' => [

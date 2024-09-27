@@ -20,7 +20,7 @@
             <li>
                 <a
                     href="{{ url($link['url'])}}" target="_blank"
-                    class="group flex h-10 w-10 items-center justify-center rounded-full border border-rose-300/70 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
+                    class="group flex h-10 w-10 items-center justify-center rounded-full border border-rose-900/70 dark:text-rose-300 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
                 >
                     <x-dynamic-component :component="$link['name']" />
                 </a>

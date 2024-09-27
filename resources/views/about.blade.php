@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:title>About</x-slot>
     <!-- Post -->
-    <article class="bg-rose-50 dark:bg-rose-950 pb-12 sm:pb-16 lg:pb-24">
+    <article class="bg-rose-50 dark:bg-rose-900 pb-12 sm:pb-16 lg:pb-24">
         <!-- Post Header -->
         <header class="flex flex-col sm:flex-row">
             <!-- Image -->
@@ -59,7 +59,7 @@
             <!-- Social Share Buttons -->
             <div class="py-8 sm:py-10">
                 <div class="flex items-center justify-between">
-                    <span class="text-lg font-medium text-rose-900 dark:text-rose-200"> Share </span>
+                    <span class="text-lg font-medium text-rose-900 dark:text-rose-200">You can find me here: </span>
 
                     <!-- Social Links -->
                     <ul class="flex items-center space-x-3">
@@ -67,7 +67,7 @@
                         <li>
                             <a
                                 href="{{ url($link['url']) }}" target="_blank"
-                                class="group flex h-10 w-10 items-center justify-center rounded-full border border-rose-300/70 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
+                                class="group flex h-10 w-10 items-center justify-center rounded-full border border-rose-900/70 dark:text-rose-300 bg-transparent transition duration-300 ease-in-out sm:h-12 sm:w-12"
                             >
                                 <x-dynamic-component :component="$link['name']" />
                             </a>
@@ -86,7 +86,7 @@
                             <div class="relative w-fit">
                                 <img
                                     class="h-20 w-20 rounded-2xl object-cover object-center sm:h-24 sm:w-24"
-                                    src="public/images/author.jpg"
+                                    src="images/author.jpg"
                                     alt=""
                                 />
                                 <span
