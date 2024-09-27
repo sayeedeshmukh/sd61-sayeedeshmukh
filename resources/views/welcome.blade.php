@@ -1,4 +1,8 @@
 <x-layout>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
     <x-slot:title>Home</x-slot>
     <!-- Home Hero-->
     <section class="bg-rose-50 dark:bg-rose-900 pt-12 sm:pt-16 lg:pt-20">
@@ -87,4 +91,5 @@
           </div>
         </div>
       </section>
+      </body>
 </x-layout>

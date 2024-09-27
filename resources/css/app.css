@@ -1,18 +1,17 @@
-/* resources/css/app.css */
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-import url(https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap)
 
 .lazy.loaded {
     @apply opacity-100;
 }
 
-body{
-    font-family: "Spicy Rice", serif;
-   font-weight: 400;
-   font-style: normal;
+body {
+    @apply font-sans;
+    font-weight: 400;
+    font-style: normal;
 }
 
 [x-cloak] {

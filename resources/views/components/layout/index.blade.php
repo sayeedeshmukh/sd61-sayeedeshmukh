@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" x-cloak x-data="{darkMode: $persist(false)}" :class="{'dark': darkMode === true }" >
-    <head>
+    <head class="font-sans">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 

@@ -8,7 +8,7 @@ export default {
   ],
   theme: {
     extend: {fontFamily: {
-      sans: ["Spicy Rice", 'serif'],
+      sans: ['"Spicy Rice"', 'serif'],
       
     },
   },
