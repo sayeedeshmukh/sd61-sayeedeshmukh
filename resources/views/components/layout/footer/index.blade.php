@@ -1,3 +1,4 @@
+<!-- Footer -->
 <footer class="bg-rose-100 dark:bg-rose-950 py-12 sm:py-20 lg:py-24">
     <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
       <!-- Logo & Social Links -->
