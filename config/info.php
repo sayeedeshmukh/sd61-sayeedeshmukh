@@ -22,9 +22,9 @@ return [
         ],
         [
             'id' => 'events',
-            'name' => 'Favorites',
-            'url' => '/fav',
-            'image' => 'images/fav.jpg',
+            'name' => 'Contact',
+            'url' => '/contact',
+            'image' => 'images/contact.jpg',
         ],
     ],
     'footerlinks' => [

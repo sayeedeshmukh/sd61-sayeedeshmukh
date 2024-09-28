@@ -5,5 +5,5 @@ return [
     'about' => 'विषयी',
     'education' => 'शिक्षण',
     'skills' => 'कौशल्य',
-    'fav' => 'आवडती'
+    'contact' => 'आवडती'
 ];
