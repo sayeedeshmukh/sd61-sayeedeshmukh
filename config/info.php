@@ -53,32 +53,6 @@ return [
             'url' => 'https://www.linkedin.com/in/sayee-deshmukh-aa7633290/',
         ],
     ],
-    'taglist' => [
-        [
-            'id' => 'trends',
-            'name' => 'Trends',
-        ],
-        [
-            'id' => 'ideas',
-            'name' => 'More',
-        ],
-        [
-            'id' => 'gaming',
-            'name' => 'College',
-        ],
-        [
-            'id' => 'climate',
-            'name' => 'School',
-        ],
-        [
-            'id' => 'gear',
-            'name' => 'Engineering',
-        ],
-        [
-            'id' => 'reviews',
-            'name' => 'Artists',
-        ],
-    ],
     'routes' => [
         [
             'name' => 'welcome',
@@ -91,19 +65,19 @@ return [
             'view' => 'about',
         ],
         [
-            'name' => 'blog',
-            'path' => '/blog/{articleId?}',
-            'view' => 'blog',
+            'name' => 'education',
+            'path' => '/education',
+            'view' => 'education',
         ],
         [
-            'name' => 'projects',
-            'path' => '/projects/{category?}',
-            'view' => 'projects',
+            'name' => 'skills',
+            'path' => '/skills',
+            'view' => 'skills',
         ],
         [
-            'name' => 'sayee',
-            'path' => '/sayee',
-            'view' => 'sayee',
+            'name' => 'contact',
+            'path' => '/contact',
+            'view' => 'contact',
         ],
     ],
 ];
