@@ -18,8 +18,7 @@ Route::get('lang/{lang}', function ($lang) {
     return redirect()->back(); // Redirect back to the same page
 })->name('change.language');
 
-Route::get('/lang/{locale}', [LanguageController::class, 'switchLanguage'])->name('lang.switch');
-
+Route::get('lang/{lang}', [LanguageController::class, 'switch'])->name('language.switch');
 
 
 
