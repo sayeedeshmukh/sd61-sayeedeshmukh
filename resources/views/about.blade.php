@@ -28,28 +28,7 @@
                         <p class="mt-4 text-base leading-loose text-rose-900 dark:text-rose-200">Beyond the confines of my studies, I have a passion for travel and exploration. Each journey offers me a chance to experience new cultures and perspectives, further enriching my understanding of the world. This love for discovery fuels my creativity and inspires me to bring fresh ideas into my projects.</p>
                         <p class="mt-4 text-base leading-loose text-rose-900 dark:text-rose-200">In summary, I am a tech-savvy individual who embraces challenges and continually seeks growth. With a foundation in AIML and a hands-on approach to learning, I am excited about the endless possibilities that technology holds for the future. I look forward to leveraging my skills and experiences to make a meaningful impact in the field of artificial intelligence and beyond.</p>
                     </div>
-                    <!-- Author meta -->
-                    <div class="mt-6 flex items-center sm:mt-8">
-                        <a href="{{ url('/about') }}" class="mr-3 flex-shrink-0">
-                            <div class="relative">
-                                <img
-                                    class="h-8 w-8 rounded-xl object-cover object-center sm:h-9 sm:w-9"
-                                    src="public/images/author.jpg"
-                                    alt=""
-                                />
-                                <span
-                                    class="absolute inset-0 rounded-xl shadow-inner"
-                                    aria-hidden="true"
-                                ></span>
-                            </div>
-                        </a>
-                        <div class="flex items-center text-sm lg:text-[15px]">
-                            <span class="hidden text-rose-900 dark:text-rose-200 sm:inline-block">By&nbsp;</span>
-                            <a class="font-medium text-rose-900 dark:text-rose-200 hover:underline" href="{{ url('/about') }}">{{ __(config('info.sitename')) }}</a>
-                            <x-icons.calendar />
-                            <span class="ml-1 text-rose-900 dark:text-rose-200">Sept 28, 2024</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </header>

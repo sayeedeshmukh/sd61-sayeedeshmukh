@@ -38,6 +38,11 @@
                 <x-theme-toggle />
                 
             </div>
+            <div class="language-switcher">
+    <a href="{{ route('change.language', ['lang' => 'en']) }}">English</a>
+    <a href="{{ route('change.language', ['lang' => 'mar']) }}">Marathi</a>
+</div>
+
 
         <!-- Hamburger menu button -->
         <button
